@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* PHẦN MỞ */
+.header{
+    position: relative;
+}
+.trangchinh{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color:white;
+    z-index: 1000000;
+}
+.menuheader{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+}
+.picture_d{
+    width: 150px;
+    height: 60px;
+}       
+.nav{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+.nav >li{
+    display: inline-block;
+    position: relative;
+}
+.nav li a{
+    padding: 0 25px;
+    text-decoration: none;
+    color: black ;
+    font-size: 18px;
+}
+.nav>li:hover >a{
+    color: #1a73e8;
+}
+.nav li:hover .level{
+    display: block; 
+}
+
+.nav .level{
+    display: none;
+    top: 21px;
+    right: 30px;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    text-align: center; 
+}
+.nav .level li:hover a{
+    color:#1a73e8;
+    background-color: aliceblue;
+}
+.level li{
+    padding: 15px 0; 
+}  
+.element_trangchu a{
+   color: #1a73e8 !important
+}
+.level{
+    list-style: none;
+    background-color: white;
+    border-radius: 10px;
+}
+
+ /* Phần search   */
+
+.search-box{
+    display: flex;
+    align-self: center;
+    font-size: 20px;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    background-color: #6da6f1  ;
+    justify-content: space-between;
+}
+.search-box:hover>.search-text{
+    width: 240px;
+    padding: 0 6px;
+}
+.search-text{
+    border: none;
+    background: none;
+    float: left;
+    line-height: 20px;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    width: 0;
+    transition: 0.4s;
+}
+.search-btn{
+    color: black;
+    border-radius: 50%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 20px;
+}
+.search-box:hover>.search-btn{
+    background: white;
+    color: rgb(203, 120, 120);
+}
+
+
+/* PHẦN THÂN */
+
+.chiatrang{
+    width: 1400px;
+    margin: auto;
+    display: flex;
+}
+.introduce{
+    padding-top: 20%;
+    position: relative
+    ;
+    background-image: linear-gradient(0,rgba(76, 73, 73, 0.8),rgba(76, 73, 73, 0.8),rgba(61, 58, 58, 0.8)),
+    url(https://cdn.pixabay.com/photo/2017/06/05/20/10/house-2375119_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.introduce_chinh{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.trang_1{
+    margin-left: 50px;
+    width: 270px;
+    margin-top: 30px;
+    position: relative;
+
+}
+.imgnho{
+    height: 500px;  
+}
+.blog_list{
+    border-bottom: 1px solid rgba(rgb(33, 31, 31), 0.5);
+    text-decoration: none;
+    color: black;
+}
+h3{
+    animation:mau 1s ease-in infinite;
+}
+@keyframes mau{
+    form{
+        color:rgb(110, 100, 100);
+    }
+    to{
+        color: cornflowerblue;
+    }
+}
+.blog_list11{
+    text-decoration: none;
+    color: black;
+}
+.blog-item-1{
+    display: flex;
+}
+.blog-item-2{
+    display: flex;
+}
+.conten{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.conten11{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+.img{
+    background-image: url("https://tranduyvilla.com/wp-content/uploads/2019/01/z2131376324994_371031d758c843c79cda0ea75b19f223.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 60px;
+}
+.img11{
+    background-image: url("https://datthu.vn/wp-content/uploads/2021/05/mau-nha-1-tang-3-phong-ngu-thumb.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 60px;
+}
+.img12{
+    background-image: url("https://nhadepsang.com.vn/images/2017/12/mau-thiet-ke-nha-1-tang-co-3-phong-ngu-cho-nha-moi-nam-2018-8.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 60px;
+}
+.img13{
+    background-image: url("https://tranduyvilla.com/wp-content/uploads/2019/01/z2131376388190_cde9b7d70bdb4f59a55bcd1152e43959.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 60px;
+}
+
+.trang_2{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.blog_list2{
+    display: flex;
+    border-bottom: 1px solid rgb(236, 230, 230);
+    
+}
+.blog-item-1{
+    border-bottom:1px solid rgb(236, 230, 230);
+}
+
+.img2{
+    background-image: url("https://nhabephoanggia.vn/contents/images/mau-villa-dep-6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 500px;
+    height: 300px;
+    padding: 100px;
+    margin-bottom: 50px;
+    
+}
+.conten2{
+    margin-top: 30px;
+    margin-left: 20px;
+    word-wrap: break-word;
+    width: 450px;
+    
+}  
+h5:hover{
+    color: cornflowerblue;
+    cursor: pointer;
+} 
+.p{
+    margin-top: 10px;
+}
+.button{
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 120px;
+    background-color: cornflowerblue;
+    color: black;
+    text-align: center;
+
+}
+.button:hover{
+    background-color: rgb(160, 182, 224);
+}
+.a{
+    text-decoration: none;
+    color: black;
+  
+}
+.h2{
+    text-decoration:none;
+    color: black;
+}
+.h2:hover{
+    color: cornflowerblue;
+    cursor: pointer;
+}
+.span{
+   margin-top: 10px; 
+}
+.span1{
+    margin-right: 50px;
+}
+.blog_list3{
+    margin-top: 20px;
+    display: flex;
+    border-bottom: 1px solid rgb(201, 196, 196);
+    
+}
+.blog_list31{
+    margin-top: 20px;
+    display: flex;
+}
+.img3{
+    background-image: url("https://nhabephoanggia.vn/contents/images/mau-villa-dep-5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 250px;
+    height: 180px;
+    padding: 100px;
+    margin-bottom: 15px;
+}
+.conten3{
+    margin-top: 20px;
+    margin-left: 20px;
+    word-wrap: break-word;
+    width: 670px;
+} 
+.img4{
+    background-image: url("https://xaydungcuonggiahieu.com/wp-content/uploads/2019/08/mini-%C4%91%E1%BA%B9p.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 250px;
+    height: 180px;
+    padding: 100px;
+    margin-bottom: 15px;
+}
+.img5{
+    background-image: url("https://gina.com.vn/wp-content/uploads/2021/07/Villa-Da-Lat-57.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 250px;
+    height: 180px;
+    padding: 100px;
+    margin-bottom: 15px;
+}
+.img6{
+    background-image: url("https://cdn.cet.edu.vn/wp-content/uploads/2019/02/villa-khong-gian-sang-trong.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 250px;
+    height: 180px;
+    padding: 100px;
+    margin-bottom: 15px;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 800px;
+    margin-bottom: 50px;  
+}
+.pagination a {
+    
+    border-radius: 3px;
+    font-size: 15px;
+    margin-right: 20px;
+    color: black;
+    float: left;
+    padding: 9px 17px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+ 
+.pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+ 
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  /* PHẦN CUỐI */
+
+.contactend{
+    width: 100%;
+    height: 45vh;
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(130, 155, 179, 0.14902);
+    color: black;
+    
+  }
+  .hinhanhlink{
+    text-decoration: none;
+    
+  }
+  
+  .chungcontentt{
+    margin-bottom: 10px;
+    justify-items: center;
+    margin-left: 68px;
+    width: 1500px;
+    margin: auto;
+  }
+  
+  .contactend_logooo{
+    display: flex;
+    left: 36%;
+    
+    
+  }
+  .tenminh{
+    font-size: 80px;
+    text-align: center;  
+    position: absolute;
+    left: 37%;
+    color: black;
+   
+  }
+  .logoo{
+    position: relative;
+    left: 0;
+    font-size: 66px;
+    left: 56%;   
+  }
+  .logooicon{
+    text-align: center;
+    margin-top: 8px;
+    align-items: center;
+  }
+  .social{
+    margin-right: 50px;
+    font-size: 20px;
+    color: black;
+  
+  }
+  .social_facebook:hover{
+    color:rgb(70, 115, 206);
+    cursor: pointer;
+  }
+  .social_instragram:hover{
+    color: #ca7316;
+    cursor: pointer;
+  }
+  .social_youtube:hover{
+    color: red;
+    cursor: pointer;
+  }
+  
+  .social_twitter:hover{
+    color: #6da6f1;
+    cursor: pointer;
+  }
+  .social_googleplus:hover{
+    color: rgb(195, 44, 37);
+    cursor: pointer;
+  }
+  .contactend_description{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 1500px;
+    margin: auto;
+  }
+  .lienhe{
+    line-height: 25px;
+    font-weight: 300;
+  }
+  .lienhe_icon{
+    display: flex;
+  }
+  .lienhe_noidungicon{
+    
+    word-wrap: break-word;
+  }
+  .lienhe_noidungicon:hover{
+    cursor: pointer;
+  }
+  .lienhe_iconnn{
+    margin-right: 10px;
+  }
+  .lienhe_dau{
+    margin-top: 20px;
+  }
+  .slogan{
+    background-color: rgb(15, 14, 14);
+    text-align: center;
+    color: rgb(246, 239, 239);
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .lienhe_icons:hover{
+   
+    font-size: 18px;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(35, 34, 34) ;
+  }
+  .lienhe_sdtt:hover{
+    font-size: 18px;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(35, 34, 34) ;
+  }
+  .lienhe_contactss:hover{
+    font-size: 18px;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(35, 34, 34)  ;
+  }
+  .h33{
+    color: black !important;
+  }
+
+
